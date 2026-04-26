@@ -5,6 +5,8 @@
 #define WINDOW_WIDTH 1280
 #define WINDOW_HEIGHT 720
 
+// TODO(wv): Maybe change to WinMain on Windows instead of hiding terminal
+// via linker flags. What difference will it make?
 int main()
 {
 	if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) == false) {
